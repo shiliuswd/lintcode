@@ -10,13 +10,13 @@ public class ClassicBinarySearch {
 	
 	public static int findPosition(int[] nums,int target) {
 		int head=0;
-		int tail= nums.length;
+		int tail= nums.length-1;
 		int mid=0;
 		int getMid=0;
 		if(nums.length==0) {
 			return -1;
 		}
-		while(head<tail) {
+		while(head<=tail) {
 			mid=(head+tail)/2;
 			getMid=nums[mid];
 			if(getMid>target) {
